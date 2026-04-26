@@ -17,11 +17,11 @@ type Bitcoin struct {
 }
 
 func (b Bitcoin) Pay(amount float64) {
-	fmt.Println("Paid 50$ using Bitcoin: ", b.WalletAddress)
+	fmt.Println("Paid ", amount, " using Bitcoin: ", b.WalletAddress)
 }
 
 func (c CreditCard) Pay(amount float64) {
-	fmt.Println("Paid 50$ using Credit Card: ", c.CardNumber)
+	fmt.Println("Paid ", amount, " using Credit Card: ", c.CardNumber)
 }
 
 func ProcessPayment(method PaymentMethod, amount float64) error {
